@@ -1,0 +1,7 @@
+svc-mitreidc:
+  build: .
+  container_name: build-mvm 
+  volumes:
+     - /vagrant/docker-alpine-jdk-mvn/build_in:/build_in:rw
+     - /vagrant/docker-alpine-jdk-mvn/build_out:/build_out:rw
+
