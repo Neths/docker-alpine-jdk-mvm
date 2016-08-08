@@ -32,6 +32,8 @@ VOLUME ["/build_out", "/build_in"]
 
 ADD build.sh /build.sh
 
+RUN chmod u+x /build.sh
+
 ENV BUILD_TARGET "clean install"
 ENV BUILD_OPTIONS "-Dmaven.javadoc.skip=true -DskipTests -T 2C"
 
